@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <cstdio>
 using namespace std;
 
@@ -13,6 +14,16 @@ int main()
     // printf("%d", f);
     // fclose(stdin);
     // fclose(fin);
+    // int a = 4;
+    // cout << a * 1.3;
+    /*string a;
+    getline(cin, a);
+    cout << a << endl
+         << a.size();*/
+    int n;
+    char ch;
+    scanf("%d %c", &n, &ch);
+    cout << n << ch;
 
     return 0;
 }
