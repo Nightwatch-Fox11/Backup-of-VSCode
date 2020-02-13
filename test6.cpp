@@ -23,9 +23,11 @@ int main()
     int n;
     char ch;
     scanf("%d %c", &n, &ch);
-    cout << n << ch;*/
+    cout << n << ch;
     int te;
     cin >> te;
     printf("%5.5d", te);
+    cout << 's';*/
+    cout << '/';
     return 0;
 }
