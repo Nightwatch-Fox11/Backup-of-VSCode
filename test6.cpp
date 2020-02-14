@@ -28,6 +28,6 @@ int main()
     cin >> te;
     printf("%5.5d", te);
     cout << 's';*/
-    cout << '/';
+    cout << 1 % 23;
     return 0;
 }
