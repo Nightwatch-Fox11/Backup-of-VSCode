@@ -56,3 +56,43 @@ int main()
     }
     return 0;
 }
+//AC代码
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+int i, j;
+int k[1010];
+int l[1010];
+char str[1010][1010];
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++)
+        scanf("%s", &str[i]);
+    for (int i = 0; i < t; i++)
+    {
+        k[i] = 0;
+        l[i] = 0;
+        int len = strlen(str[i]);
+        for (int j = 0; j < len; j++)
+        {
+            if (k[i] == 0 && str[i][j] == ')')
+                l[i] = 1; //第一个是否是 右括号
+            if (str[i][j] == '(')
+                k[i]++;
+            if (str[i][j] == ')')
+                k[i]--;
+        }
+    }
+    for (int i = 0; i < t; i++)
+    {
+        if (k[i] == 0 && l[i] == 0)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+    return 0;
+}
