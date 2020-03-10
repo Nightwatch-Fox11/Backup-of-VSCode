@@ -59,7 +59,7 @@ const int maxn = 1005;
 
 char a[30], s[1005], temp[1005];
 int ran[30];
-vector<node> v;
+
 vector<char> v1;
 struct node
 {
@@ -71,7 +71,7 @@ struct node
         return val < rhs.val;
     }
 };
-
+vector<node> v;
 int main()
 {
     int t;
