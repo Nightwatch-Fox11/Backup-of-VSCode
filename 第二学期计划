@@ -9,7 +9,6 @@
 
 二.
 make_pair  lower_bound  assert  C++文件读写  register  sprintf
-指针->与 . 的区别  多个数的最大公因数最小公倍数  费马小定理  ASCII  complex  foreach  iomanip
-C语言替换gets
+指针->与 . 的区别  多个数的最大公因数最小公倍数  费马小定理  ASCII  complex  foreach  贪心
 *(conio.h,ncurses,windows.h,easygui)
 endl and '\n'
