@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     string a = "YEs aa";
+    string c("YYYY"); //string 的另一种定义方法
     // printf("%s", a.c_str());
     cout << a.size() << ' ' << a.length();
     string b = " Fuck";

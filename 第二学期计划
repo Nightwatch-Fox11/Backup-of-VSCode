@@ -7,8 +7,9 @@
 6.了解SSH
 7.了解IEEE
 
-二.
-make_pair  lower_bound  assert  C++文件读写  register  sprintf
-指针->与 . 的区别  多个数的最大公因数最小公倍数  费马小定理  ASCII  complex  foreach  贪心
+二. 
+make_pair  lower_bound  assert  C++文件读写  register  sprintf  C语言位运算相关 cmath缺点误差等 
+指针->与 . 的区别  多个数的最大公因数最小公倍数  费马小定理  ASCII  complex   贪心
 *(conio.h,ncurses,windows.h,easygui)
-endl and '\n'
+快排 大根堆 线段树 归并排序 桶排序 hash排序
+递归的时间复杂度
