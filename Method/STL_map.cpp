@@ -16,6 +16,9 @@ int main()
     {
         cout << it->first << ' ' << it->second << endl;
     }
-
+    map<int, int> mpp;
+    mpp[1]++; //mpp[i]似乎在定义后自动初值0
+    cout << mpp[1] << endl
+         << mpp.size(); //1 1
     return 0;
 }
