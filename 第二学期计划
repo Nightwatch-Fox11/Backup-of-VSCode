@@ -13,3 +13,4 @@ make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath�
 *(conio.h,ncurses,windows.h,easygui)
 快排 大根堆 线段树 归并排序 桶排序 hash排序
 递归的时间复杂度
+define与const int std::less greater
