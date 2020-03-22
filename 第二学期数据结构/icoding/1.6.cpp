@@ -13,10 +13,7 @@ void lnk_merge(LinkList A, LinkList B, LinkList C)
 {
     Node *p = A->next;
     Node *q = B->next;
-    Node *r;
-    C = A;
-    C->next = NULL;
-    r = C;
+    Node *r = C;
     int i = 1;
     while (p != NULL && q != NULL)
     {
@@ -34,13 +31,6 @@ void lnk_merge(LinkList A, LinkList B, LinkList C)
         }
         i++;
     }
-    if (p)
-    {
-        r->next = p;
-    }
-    else
-    {
-        r->next = q;
-    }
+    r->next = p ? p : q;
     free(B);
 }
