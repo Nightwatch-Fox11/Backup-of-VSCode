@@ -9,7 +9,7 @@ typedef struct
     int len;
 } SeqString;
 
-int StrInsert(SeqString *s, int pos, SeqString t, char *p)
+void StrInsert(SeqString *s, int pos, SeqString t, char *p)
 {
     p = (char *)malloc(t.len + s->len);
     for (int i = 0; i < pos; i++)
