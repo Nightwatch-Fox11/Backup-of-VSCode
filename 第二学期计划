@@ -10,7 +10,7 @@
 9.西瓜书+李航书
 
 二. 
-make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构
+make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类
 variant 快速排序 欧几里得算法 BF KMP 回溯算法 BM Sunday ctype  std::less greater  isstring等类型判断函数
 指针->与 . 的区别  多个数的最大公因数最小公倍数  费马小定理  ASCII  complex   贪心 visit 预处理，离散化等 
 *(conio.h,ncurses,windows.h,easygui)
