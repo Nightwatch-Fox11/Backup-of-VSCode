@@ -26,3 +26,4 @@ void StrInsert(SeqString *s, int pos, SeqString t, char *p)
         p[a + i] = s->ch[i];
     }
 }
+
