@@ -12,11 +12,16 @@
 11.学习powershell及cmd
 12.Linux bash等
 13.手机备份相册方法
+14.Linux系统备份方法
+15.Linux配置git
+16.Ubuntu20.04体验
+17.Win8装机
+18.深入了解WSL
 
 二. 
-make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  cin.get();cin.getline(z, 100);
-variant   快速排序   欧几里得算法  BF  KMP  回溯算法 BM  Sunday  std::less greater 类型名后加*的含义  结构体比较  %s存字符  ACM中何时用define何时用const int
-多个数的最大公因数最小公倍数  费马小定理  ASCII  complex   贪心 visit 预处理，离散化等 
+make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume
+variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  std::less greater 类型名后加*的含义  结构体比较  %s存字符  
+多个数的最大公因数最小公倍数  费马小定理  complex   贪心  visit  预处理，离散化等  noskipws
 *(conio.h,ncurses,windows.h,easygui)
 快排 大根堆 线段树 归并排序 桶排序 hash排序
 递归的时间复杂度  指针的*位置及变量类型相关
