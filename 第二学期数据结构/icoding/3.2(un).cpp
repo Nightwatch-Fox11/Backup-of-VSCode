@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dsstring.h"
 
 int str_replace(const char *in, char *out, int outlen, const char *oldstr, const char *newstr)
 {
     int lenin = 0, lenold = 0, lennew = 0, t = 0;
+    // 统计长度
     while (in[lenin] != '\0')
     {
         lenin++;
@@ -17,10 +17,12 @@ int str_replace(const char *in, char *out, int outlen, const char *oldstr, const
     {
         lennew++;
     }
-    int flag = 1, start = 0;
-    while (flag)
+    int lenout = lenin, i = 0;
+    // BF找字串
+
+    while (1)
     {
-        int i = start, j = 0;
+        int j = 0;
         while (i < lenin && j < lenold)
         {
             if (in[i] == oldstr[j])
@@ -36,31 +38,44 @@ int str_replace(const char *in, char *out, int outlen, const char *oldstr, const
         }
         if (j >= lenold)
         {
-            if (i - lenold + lennew >= outlen)
+
+            if (lenout + lennew >= outlen)
             {
-                return 0;
+                out[lenout + 1] = '\0';
+                return t;
             }
             else
             {
-                t++;
-                for (int k = 0; k < i - lenold; k++)
+                if (t == 0)
                 {
-                    out[i] = in[i];
+                    for (int k = 0; k < i - lenold; k++)
+                    {
+                        out[k] = in[k];
+                    }
+                    lenout = i - lenold;
                 }
                 for (int k = 0; k < lennew; k++)
                 {
-                    out[i - lenold + k] = newstr[i];
+                    out[lenout + k] = newstr[k];
                 }
-                for (int k = i - lenold + lennew; k < outlen; k++)
+                lenout += lennew;
+                for (int k = 0; k + i < lenin; k++)
                 {
-                    out[k] = in[k - lennew + lenold];
+                    if (lenout + k == outlen - 1)
+                    {
+                        out[outlen - 1] = '\0';
+                        break;
+                    }
+
+                    out[lenout + k] = in[i + k];
                 }
-                start = i - lenold + lennew;
+
+                t++;
             }
         }
         else
         {
-            flag = 0;
+            break;
         }
     }
     return t;

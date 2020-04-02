@@ -54,7 +54,6 @@ int main()
     cin >> T;
     while (T--)
     {
-
         int n;
         cin >> n;
         char ch = getchar();
@@ -65,7 +64,6 @@ int main()
             getline(cin, b);
             istringstream is(b);
             string s;
-
             while (is >> s)
             {
                 if (a == s)
@@ -88,17 +86,14 @@ int main()
     return 0;
 }
 */
-/*     C语言版 WA!!!!!!!
+/*     C语言版 WA!!!!!!!*/
+/*
 #include <iostream>
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
 using namespace std;
-void consume(char ch)
-{
-    while (getchar() != ch)
-        ;
-}
+
 char key[32], title[128];
 int main()
 {
@@ -107,7 +102,7 @@ int main()
     while (T--)
     {
         scanf("%d", &N);
-        consume('\n');
+        char aa = getchar();
         int res = 0;
         fgets(key, 32, stdin);
         for (int i = 0; i < N; i++)
@@ -135,3 +130,71 @@ int main()
     return 0;
 }
 */
+// AC代码from zhang
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int T, N;
+    int len1, len2, result, judge, L1, L2, i;
+    scanf("%d", &T);
+    getchar();
+    for (int t = 0; t < T; t++)
+    {
+        result = 0;
+        scanf("%d", &N);
+        getchar();
+        // printf("ku%d",N);
+        char str[30], w;
+        scanf("%s", str);
+        //printf("1%s\n",str);
+        getchar();
+        len1 = strlen(str);
+        for (int n = 0; n < N; n++)
+        {
+            // printf("gg");
+            judge = 0;
+            L1 = L2 = 0;
+            char titles[120];
+            scanf("%[^\n]", titles);
+            len2 = strlen(titles);
+            getchar();
+            // printf("2%s\n",titles);
+            for (i = 0; i < len2; i++)
+            {
+                //printf("数%d %d\n",L1,L2);
+                if (titles[i] == ' ')
+                {
+                    if (L1 == L2 && L1 == len1)
+                    {
+
+                        judge = 1;
+                        break;
+                    }
+                    else
+                    {
+                        L1 = L2 = 0;
+                    }
+                    continue;
+                }
+
+                if (L1 < len1 && str[L1] == titles[i])
+                {
+                    L1++;
+                }
+                L2++;
+            }
+
+            if (i == len2 && L2 == L1 && L2 == len1)
+                judge = 1;
+            if (judge)
+            {
+                result++; //printf("成功\n");
+            }
+        }
+        if (result)
+            printf("%d\n\n", result);
+        else
+            printf("Do not find\n\n");
+    }
+}

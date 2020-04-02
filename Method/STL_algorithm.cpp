@@ -3,10 +3,18 @@
 #include <string>
 #include <algorithm>
 using namespace std;
+struct node
+{
+    int x, y;
+} sd[10];
 
-bool cmp(int a, int b)
+bool cmp(int a, int b) //sort 排序函数样例
 {
     return a > b;
+}
+bool cmp1(node a, node b) //sort 排序函数样例
+{
+    return a.x > b.x;
 }
 
 int main()
@@ -53,12 +61,13 @@ int main()
     cout << endl;
     // sort
     int k[7] = {4, 1, 6, 3, 8, 0, 23};
-    sort(k, k + 7, cmp);
+    sort(k, k + 7, cmp); //若排序函数不填则默认从小到大排序
     for (int i = 0; i < 7; i++)
     {
         cout << k[i] << ' ';
     }
     cout << endl;
-
+    //结构体排序
+    sort(sd, sd + 10, cmp1);
     return 0;
 }

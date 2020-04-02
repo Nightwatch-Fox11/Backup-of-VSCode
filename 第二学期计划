@@ -15,13 +15,20 @@
 14.Linux系统备份方法
 15.Linux配置git
 16.Ubuntu20.04体验
-17.Win8装机
+17.
 18.深入了解WSL
+19.弄一个公众号
+20.了解ACM中的板子是什么意思
+21.了解Wallpaper Engine
 
 二. 
-make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume
-variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  std::less greater 类型名后加*的含义  结构体比较  %s存字符  
-多个数的最大公因数最小公倍数  费马小定理  complex   贪心  visit  预处理，离散化等  noskipws
+make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume  优先队列两种实现
+variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue
+多个数的最大公因数最小公倍数  费马小定理  complex   贪心  visit  预处理，离散化等  noskipws   printf/scanf/cin/cout比较+缓冲区
 *(conio.h,ncurses,windows.h,easygui)
-快排 大根堆 线段树 归并排序 桶排序 hash排序
+快排 大根堆 线段树 归并排序 桶排序 hash排序  next_permutation   include<iterator>
 递归的时间复杂度  指针的*位置及变量类型相关
+中序+前/后序确定二叉树  全局变量的默认初始化问题  
+ostream_iterator<int> output(cout, " ");
+    cout << "Vector vec contains:";
+    copy(vec.begin(), vec.end(), output);

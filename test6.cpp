@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    /*printf("%f", 23e-4);
+    /*
+    printf("%f", 23e-4);
     FILE *fin;
     fin = fopen("122", "rb");
     int f;
@@ -27,7 +28,7 @@ int main()
     int te;
     cin >> te;
     printf("%5.5d", te);
-    cout << 's';*/
-    cout << "ÄãºÃ";
+    cout << 's';
+    */
     return 0;
 }
