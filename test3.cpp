@@ -17,26 +17,33 @@ int str_replace(const char *in, char *out, int outlen, const char *oldstr, const
     {
         lennew++;
     }
-    int lenout = lenin, i = 0;
-    // BF找字串
-    while (1)
+    int i = 0, j = 0;
+    while (i < lenin && j < lenold)
     {
-        int j = 0;
-        while (i < lenin && j < lenold)
+        if (in[i] == oldstr[j])
         {
-            if (in[i] == oldstr[j])
-            {
-                i++;
-                j++;
-            }
-            else
-            {
-                i = i - j + 1;
-                j = 0;
-            }
+            i++;
+            j++;
         }
-        if (j >= lenold) //已匹配到字串，此时i为子串最后一个字符下一个字符的下标
+        else
         {
+            i = i - j + 1;
+            j = 0;
         }
-    } //end of while(1)
+    }
+    int m = (j >= lenold ? i - lenold : 0);
+    char outt[outlen];
+    for (int k = 0; k < lenin; k++)
+    {
+        outt[k] = in[k];
+    }
+    int lenout = lenin;
+    printf("%s\n%d", outt, lenout);
+}
+int main()
+{
+    char l[120];
+    str_replace("aaabbbccc", l, 14, "c", "123");
+
+    return 0;
 }

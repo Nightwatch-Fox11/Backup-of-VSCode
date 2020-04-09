@@ -83,8 +83,7 @@ bool blstr_substr(BLString src, int pos, int len, BLString *sub)
     count = ((*sub).len - 1) % 4 + 1;
     while (count < 4)
     {
-        (*sub).tail->ch[count] = '#';
-        count++;
+        (*sub).tail->ch[count++] = '#';
     }
     return 1;
 }
