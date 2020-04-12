@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int a[1001];
+int b[1001];
 void init(int a[]) //堆的初始化
 {
     int i, k, t;
@@ -47,29 +47,32 @@ void pop(int a[]) //删顶操作
 }
 int main()
 {
-    int n, t, k, i;
+    int i;
     ifstream myfile("Test.txt");
-    for (i = 1; i < 1001; i++) //先读入1000个元素
+    for (i = 1; i < 1001; i++)
     {
-        myfile >> a[i];
+        myfile >> b[i];
     }
-    init(a);
-    pop(a);
+    init(b);
+    pop(b);
     int temp;
     while (!myfile.eof()) //直到文件结尾
     {
         myfile >> temp;
-        if (temp <= a[1])
+        if (temp <= b[1])
         {
             continue;
         }
         else
         {
-            a[1000] = temp;
-            pop(a);
+            b[1000] = temp;
+            pop(b);
         }
     }
     myfile.close();
-
+    for (i = 1; i < 1001; i++)
+    {
+        cout << b[i] << endl;
+    }
     return 0;
 }
