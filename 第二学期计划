@@ -3,7 +3,7 @@
 2.回顾csdn,知乎收藏夹
 3.学习使用Manjaro
 4.简要学习Git的原理,了解SVN与git差别
-5.学习vim,nano
+5.学习vim,nano，并搭建相应IDE环境
 6.了解SSH
 7.了解IEEE
 8.了解如何在电脑上访问手机文件
@@ -19,17 +19,18 @@
 18.深入了解WSL
 19.弄一个公众号
 20.了解ACM中的板子是什么意思
-22.了解i3wm
+22.了解使用i3wm
 23.职业了解
 24.学习图论
+25.复习数据结构，预习下学期内容
 
 二. 
 make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume  优先队列两种实现
-variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue
+variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue   
 多个数的最大公因数最小公倍数  费马小定理  complex   贪心  visit  预处理，离散化等  noskipws   printf/scanf/cin/cout比较+缓冲区
 *(conio.h,ncurses,windows.h,easygui)
-快排 线段树 归并排序 桶排序 hash排序  next_permutation   include<iterator>   生成随机数  使用文件作为测试数据以及输出文件与测试数据比较
-递归的时间复杂度  指针的*位置及变量类型相关
+快排 线段树 归并排序 桶排序 hash排序  next_permutation   include<iterator>   使用文件作为测试数据以及输出文件与测试数据比较
+递归的时间复杂度  指针的*位置及变量类型相关   海量数据处理
 中序+前/后序确定二叉树 
 ostream_iterator<int> output(cout, " ");
     cout << "Vector vec contains:";

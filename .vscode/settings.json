@@ -4,6 +4,7 @@
         "array": "cpp",
         "iomanip": "cpp",
         "random": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp"
     }
 }
