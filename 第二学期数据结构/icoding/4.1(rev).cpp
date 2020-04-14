@@ -23,8 +23,8 @@ bool add_matrix(const TSMatrix *pM, const TSMatrix *pN, TSMatrix *pQ)
     pQ->m = pM->m;
     pQ->n = pM->n;
     pQ->len = 0;
-    m = n = k = 1;
-    while (m <= pM->len && n <= pN->len)
+    m = n = k = 0;
+    while (m < pM->len && n < pN->len)
     {
         if (pM->data[m].i < pN->data[n].i)
         {
@@ -33,9 +33,8 @@ bool add_matrix(const TSMatrix *pM, const TSMatrix *pN, TSMatrix *pQ)
         }
         else if (pM->data[m].i > pN->data[n].i)
         {
-            pQ->data[k].i = pN->data[n].i;
-            pQ->data[k].j = pN->data[n].j;
-            pQ->data[k].e = -pN->data[n].e;
+            pQ->data[k] = pN->data[n];
+            n++;
         }
         else
         {
@@ -46,18 +45,16 @@ bool add_matrix(const TSMatrix *pM, const TSMatrix *pN, TSMatrix *pQ)
             }
             else if (pM->data[m].j > pN->data[n].j)
             {
-                pQ->data[k].i = pN->data[n].i;
-                pQ->data[k].j = pN->data[n].j;
-                pQ->data[k].e = -pN->data[n].e;
+                pQ->data[k] = pN->data[n];
                 n++;
             }
             else
             {
-                if (pM->data[m].e - pN->data[n].e)
+                if (pM->data[m].e + pN->data[n].e)
                 {
                     pQ->data[k].i = pM->data[m].i;
                     pQ->data[k].j = pM->data[m].j;
-                    pQ->data[k].e = pM->data[m].e - pN->data[n].e;
+                    pQ->data[k].e = pM->data[m].e + pN->data[n].e;
                     n++;
                     m++;
                 }
@@ -72,18 +69,16 @@ bool add_matrix(const TSMatrix *pM, const TSMatrix *pN, TSMatrix *pQ)
         k++;
         pQ->len++;
     }
-    while (m <= pM->len)
+    while (m < pM->len)
     {
         pQ->data[k] = pM->data[m];
         m++;
         k++;
         pQ->len++;
     }
-    while (n <= pN->len)
+    while (n < pN->len)
     {
-        pQ->data[k].i = pN->data[n].i;
-        pQ->data[k].j = pN->data[n].j;
-        pQ->data[k].e = -pN->data[n].e;
+        pQ->data[k] = pN->data[n];
         n++;
         k++;
         pQ->len++;
