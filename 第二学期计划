@@ -1,8 +1,8 @@
 一.假期
 1.深入了解vpn,架设服务器,搭建vps等
 2.回顾csdn,知乎收藏夹，适当整理。
-
-4.简要学习Git的原理,了解SVN与git差别
+3.学习使用typora+markdown写博客记笔记啥的，开通博客元，写前两学期年记，学会使用Hexo搭建个人博客，并维护
+4.简要学习Git的原理,简要了解SVN与git差别
 5.学习vim,nano,并搭建相应IDE环境，了解neovim
 6.使用teamviewer
 7.了解IEEE
@@ -10,14 +10,13 @@
 9.机器学习！！！
 10.学习并熟练vs快捷键+Chrome快捷键
 11.学习powershell及cmd常用命令
-12.Linux bash & fish
-
+12.Linux bash & fish & zsh
+12.5 学会使用bash 脚本
+13.学习stackoverflow的一般使用方法
 14.Linux系统备份方法
-15.Linux配置git
-
+15.熟练Linux配置git
 17.复习python
 18.深入了解WSL
-
 20.完善ACM模板
 21.了解学习正则表达式
 22.了解使用i3wm
@@ -38,12 +37,12 @@
 
 二. 
 make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume  优先队列两种实现
-variant   快速排序   欧几里得算法  KMP 回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue   
+variant   快速排序   欧几里得算法   KMP  回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue   
 多个数的最大公因数最小公倍数  费马小定理  complex   贪心  visit  预处理，离散化等  noskipws   printf/scanf/cin/cout比较+缓冲区
-*(conio.h,ncurses,windows.h,easygui)   复变函数  抽象函数 矩阵快速幂  初等数论   群论置换
+*(conio.h,ncurses,windows.h,easygui)   复变函数  抽象函数  矩阵快速幂  初等数论   群论置换
 快排  线段树  toptree  归并排序  桶排序  hash排序  next_permutation   include<iterator>   使用文件作为测试数据以及输出文件与测试数据比较
 递归的时间复杂度  指针的*位置及变量类型相关   海量数据处理问题   广义表    targan算法  ji数排序  优先队列与最短路径  莫队算法  RMQ
-树状数组log2n第k小   懒操作  Topcoder文章：如何写好一个二分查找  迷宫问题
+树状数组log2n第k小   懒操作  Topcoder文章：如何写好一个二分查找  迷宫问题   滚动数组
 
 中序+前/后序确定二叉树 
 ostream_iterator<int> output(cout, " ");
