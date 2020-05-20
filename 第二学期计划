@@ -1,7 +1,7 @@
 一.假期
 1.深入了解vpn,架设服务器,搭建vps等
 2.回顾csdn,知乎收藏夹，适当整理。
-3.学习使用typora+markdown写博客记笔记啥的，开通博客元，写前两学期年记，学会使用Hexo搭建个人博客，并维护
+3.学习使用typora+markdown写博客记笔记啥的，写前两学期年记，学会使用Hexo搭建个人博客，并维护
 4.简要学习Git的原理,简要了解SVN与git差别
 5.学习vim,nano,并搭建相应IDE环境，了解neovim
 6.使用teamviewer
@@ -31,10 +31,11 @@
 32.学会在github上找开源项目，并且跟进一个C++或C项目，并了解Github相关插件等
 33.初步了解使用wine
 34.速通JAVA，浅学MATLAB
-
+35.搭建图床Github+jsDelivr+PicGo打造免费图床
 36.创造计划：写博客||视频||开发产品 赚点
 37.学习使用Onedrive
-
+38.了解Gitbook
+39.发掘coding和gitee的潜能
 二. 
 make_pair  lower_bound  C++文件读写   sprintf  C语言位运算相关 cmath缺点误差等  STL数据结构  array类  new&&delete  consume  优先队列两种实现
 variant   快速排序   欧几里得算法   KMP  回溯算法  BM  Sunday  类型名后加*的含义  %s存字符   素数筛  functional  dequeue   
