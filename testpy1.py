@@ -35,3 +35,4 @@ print(sum % 11)
 print('heexdadasdld ado') '''
 a, b = input().split()
 print(a)
+print(a)
