@@ -47,3 +47,16 @@ inline int read()
         x = x * 10 + c - 48;
     return x * f;
 }
+void in(int &read)
+{
+    int x = 0;
+    char ch = getchar();
+    while (ch < '0' || ch > '9')
+        ch = getchar();
+    while (ch >= '0' && ch <= '9')
+    {
+        x = x * 10 + ch - '0';
+        ch = getchar();
+    }
+    read = x; //读入优化
+}
