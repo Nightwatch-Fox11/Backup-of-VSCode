@@ -1,11 +1,11 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> //Kruskal算法
 using namespace std;
 int N, M; //点，边
 const int MAXN = 5e3 + 100;
 const int MAXM = 2e5 + 100;
 struct edge //注意这里用邻接表or邻接矩阵都不合适，所以选取这种特制的结构存图
 {
-    int fr, to, val; //起点，终点，权值（不过本题中起点终点没有差别，因为是无向图）
+    int fr, to, val; //起点，终点，权值（不过本题中起点终点没有差别，因为是无向图）,而且比较重要的一点是Kruskal算法中边的方向不影响所以无需区分起点终点
 } e[MAXM];
 int p[MAXN];
 int find(int x) //经典并查集函数
@@ -16,7 +16,7 @@ bool cmp(const edge &p1, const edge &p2)
 {
     return p1.val < p2.val;
 }
-int main() //法一Kruskal算法
+int main()
 {
     scanf("%d %d", &N, &M);
     int i, sum = 0, cnt = 0, t1 = 0, t2 = 0; //sum为当前权值和，cnt为边计数器(代表已选的边数)

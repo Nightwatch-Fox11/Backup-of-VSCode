@@ -2,5 +2,5 @@
 using namespace std;
 int main()
 {
-    cout << 5e5;
+    cout << 1e4;
 }
