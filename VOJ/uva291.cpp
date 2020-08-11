@@ -1,4 +1,4 @@
-//一笔画问题，图论基础+dfs
+//一笔画问题本质是欧拉回路，图论基础+dfs，
 #include <bits/stdc++.h>
 using namespace std;
 int house[6][6]; //邻接矩阵
