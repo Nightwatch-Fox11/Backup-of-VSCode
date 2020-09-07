@@ -3,9 +3,9 @@
 #include <cstdio>
 using namespace std;
 
+/*
 int main()
 {
-    /*
     printf("%f", 23e-4);
     FILE *fin;
     fin = fopen("122", "rb");
@@ -29,6 +29,8 @@ int main()
     cin >> te;
     printf("%5.5d", te);
     cout << 's';
-    */
+    
+   
     return 0;
 }
+*/
