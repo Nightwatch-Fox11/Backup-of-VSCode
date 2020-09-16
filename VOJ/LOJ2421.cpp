@@ -18,7 +18,7 @@ void in(int &read) //读入优化函数
     read = x;
 }
 //存储图的数据结构--链式前向星
-//也可以使用vecter，好像这道题更简单
+//也可以使用vector，好像这道题更简单
 int head[MAXN]; //head[i]数组，表示以 i 为起点的最后一条边的编号
 struct edge
 {

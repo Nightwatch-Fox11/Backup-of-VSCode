@@ -66,3 +66,8 @@
 1. 所有Java类放在同一目录下，互相调用无需显式声明
 2. import放在package后面，类定义前面
 3. jar文件实际上说一组class文件的压缩
+4. java属性方法四种权限，`private, default, protected, public`.
+
+# 第八章 JAVA常用类
+1. BigInteger, BigDecimal使用字符串赋值
+2. 
