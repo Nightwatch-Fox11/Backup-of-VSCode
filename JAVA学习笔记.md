@@ -70,4 +70,7 @@
 
 # 第八章 JAVA常用类
 1. BigInteger, BigDecimal使用字符串赋值
-2. 
+2. Random随机数
+
+# 第九章 JAVA异常和异常处理
+1. `try catch finally`
