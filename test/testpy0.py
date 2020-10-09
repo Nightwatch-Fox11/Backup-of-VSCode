@@ -12,3 +12,5 @@ import math
 a = math.log(10000, 2)
 print(a)
 '''
+while True:
+    print(1)
