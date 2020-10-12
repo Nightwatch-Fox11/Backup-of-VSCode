@@ -1,0 +1,3 @@
+- grub and uefi and efi
+- the detailed information about WSL and WSL2
+- JVM
