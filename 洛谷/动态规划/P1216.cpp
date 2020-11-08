@@ -1,3 +1,4 @@
+//数字三角形
 //本题为dp入门题，其中包含记忆化搜索思想，还可以使用递推方法
 #include <bits/stdc++.h>
 using namespace std;
