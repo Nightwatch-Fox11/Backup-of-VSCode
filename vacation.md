@@ -1,0 +1,9 @@
+- Linux docker
+- ML + DL
+- Web 
+- 服务器
+- 计网
+- seek more project chances and get more experiences
+- improve vocabulary
+- seek more library chances
+- Linux shell
