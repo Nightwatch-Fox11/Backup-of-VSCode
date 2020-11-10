@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int N, a[25][25], w[25], f[25], nxt[25]; //a数组存邻接矩阵，w[i]是每个地窖中的地雷个数，f[i]表示第i个地窖能挖的最大地雷数，nxt[i]表示路径上i的下一个
-int main()
+int main()                               //这里逆推所以是nxt数组，否则正推是pre数组
 {
     cin >> N;
     for (int i = 1; i <= N; i++)
