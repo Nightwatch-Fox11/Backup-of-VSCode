@@ -1,5 +1,5 @@
 #include <iostream>
-int factorial(int n)
+long factorial(int n)
 {
     if (n == 1)
     {
