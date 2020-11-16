@@ -7,3 +7,4 @@
 - improve vocabulary
 - seek more library chances
 - Linux shell
+- 
