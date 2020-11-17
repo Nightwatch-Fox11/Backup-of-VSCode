@@ -34,6 +34,10 @@
 - 复习 概率论MOOK+作业+错题，计组ppt等课件+错题， 
 
 ---
+## After MidTerm 
+- 综设，照着教程学习。
+- ML DL
+---
 ---
 
 # Summery
