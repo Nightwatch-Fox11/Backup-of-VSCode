@@ -1,6 +1,0 @@
-- grub and uefi and efi
-- the detailed information about WSL and WSL2
-- JVM
-- Docker 
-- Shell script
-- 正则表达式
