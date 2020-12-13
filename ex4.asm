@@ -1,0 +1,54 @@
+DATA    SEGMENT
+PROMPT1  DB  0AH,0DH,'STRING:','$' 
+PROMPT2  DB  0AH,ODH 'RIGHT-ADJUSTING OF STRING',OAH,ODH,'$'
+STRING1  DB  NUM,0,NUM DUP(' '),OAH,ODH,'$'
+STRING2  DB  NUM,0,NUM DUP(' '),OAH,ODH,'$'
+DATA    ENDS
+STACK1  SEGMENT PARA STACK
+        DW 20H DUP(0)
+STACK1  ENDS
+COSEG   SEGMENT
+        ASSUME  CS:COSEG, DS:DATA, SS:STACK1, ES:DATA
+START:
+    MOV AX, DATA
+    MOV DS, AX
+    MOV ES, AX
+    MOV CX, 2
+    LEA BX,STRING1
+LOP:    
+    LEA DX,PROMPT1
+    MOV AH,09H
+    INT 21H
+    MOV DX,BX
+    MOV AH,0AH
+    INT 21H
+    LEA BX,STRING2
+    LOOP LOP
+    ;字符串右对齐处理
+    LEA BX,STRING1+2
+    CALL MOVE
+    LEA BX,STRING2+2
+    CALL MOVE
+    ;输出右对齐字符串
+    LEA DX PROMPT2
+    MOV AH,09H
+    INT 21H
+    LEA DX,STRING1+2
+    MOV AH,09H
+    INT 21H
+    LEA DX,STRING2+2
+    MOV AH 09H
+    INT 21H
+    MOV AH,4CH
+    INT 21H
+    ;字符串右对齐处理子程序
+MOVE    PROC
+        XOR CH,CH
+        MOV CL,-1[BX]  ;字符串传送字节数
+        MOV SI,CX
+        ADD SI,BX      ;传送源串末址
+        DEC SI
+        MOV DI,BX
+        ADD DI,NUM-1   ;传送目的末址
+        STD
+        REP MOVSB       ;字符串传送
